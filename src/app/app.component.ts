@@ -1,12 +1,21 @@
+
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+import { NavbarComponent } from './core/navbar/navbar.component';
+import { FooterComponent } from './core/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    NavbarComponent,
+    HomeComponent,
+    FooterComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'alfredo-portfolio';
+
 }

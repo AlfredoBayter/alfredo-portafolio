@@ -1,0 +1,37 @@
+
+.footer {
+  padding: 35px 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.footer-logo {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.footer-logo span {
+  color: var(--accent);
+}
+
+.footer p,
+.copyright {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 650px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
